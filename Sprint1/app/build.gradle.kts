@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.sprint1"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.sprint1"
