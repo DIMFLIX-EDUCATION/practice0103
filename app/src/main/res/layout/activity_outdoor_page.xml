@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OutdoorPageActivity"
-    android:background="#F0EFEF">
+    android:background="#F0EFEF"
+    tools:context=".OutdoorPageActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/topPanel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,27 +31,34 @@
                 tools:ignore="RtlHardcoded">
 
                 <ImageView
+                    android:id="@+id/imageView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="61dp"
-                    android:src="@drawable/button_back"
+                    android:layout_weight="1"
                     android:onClick="goMain"
-                    android:layout_weight="1">
+                    android:src="@drawable/button_back"
+                    app:layout_constraintEnd_toStartOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 </ImageView>
 
                 <TextView
-                    android:layout_weight="4"
-                    android:text="Outdoor"
-                    android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/main">
+                    android:layout_weight="4"
+                    android:src="@drawable/main"
+                    android:text="Outdoor"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 </TextView>
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -142,20 +149,21 @@
             <GridLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:columnCount="2"
-                android:rowCount="4"
-                android:layout_marginTop="20dp">
+                android:rowCount="4">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/rectangle"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 
@@ -172,6 +180,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 
@@ -183,12 +192,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/rectangle"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 
@@ -205,6 +215,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 
@@ -216,12 +227,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/rectangle"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 
@@ -238,6 +250,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 
@@ -254,6 +267,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="goProductCard"
                         android:src="@drawable/product_cart1_like"
                         tools:ignore="MissingConstraints">
 

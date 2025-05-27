@@ -11,6 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Education_practice">
         <activity
+            android:name=".SearchPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoritePageActivity"
+            android:exported="false" />
+        <activity
             android:name=".OutdoorPageActivity"
             android:exported="false" />
         <activity
