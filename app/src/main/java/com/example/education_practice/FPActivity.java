@@ -33,7 +33,7 @@ public class FPActivity extends AppCompatActivity {
     }
 
     public void onClickExitBtn(View view) {
-        Intent intent = new Intent(this, MainPage.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }
