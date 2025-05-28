@@ -18,4 +18,10 @@ public class CartActivity extends AppCompatActivity {
         Intent intent = new Intent(CartActivity.this, MainPage.class);
         startActivity(intent);
     }
+
+    public void onClickBuyProduct(View view) {
+        Intent intent = new Intent(this, CheckoutPage.class);
+        startActivity(intent);
+        finish();
+    }
 }

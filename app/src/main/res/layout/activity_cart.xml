@@ -356,6 +356,7 @@
             android:layout_gravity="bottom"
             android:layout_margin="16dp"
             android:backgroundTint="#22C4FF"
+            android:onClick="onClickBuyProduct"
             android:text="Оформить Заказ"
             android:textAllCaps="false"
             android:textSize="18sp"

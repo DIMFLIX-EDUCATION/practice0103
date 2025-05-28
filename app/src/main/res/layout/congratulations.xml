@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon_round"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/congratulations"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вы успешно оформили заказ"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#48B2E7"
+            android:text="Вернуться к покупкам"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="10dp"
+            android:onClick="returnToMain"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

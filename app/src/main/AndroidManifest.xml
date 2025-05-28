@@ -53,6 +53,9 @@
         <activity
             android:name=".FPActivity"
             android:exported="false" />
+        <activity
+            android:name=".CheckoutPage"
+            android:exported="false" />
     </application>
 
 </manifest>
