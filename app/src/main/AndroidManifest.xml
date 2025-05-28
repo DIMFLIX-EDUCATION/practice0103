@@ -47,6 +47,12 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
+        <activity
+            android:name=".OtrLog"
+            android:exported="false" />
+        <activity
+            android:name=".FPActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

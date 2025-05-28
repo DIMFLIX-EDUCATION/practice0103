@@ -27,6 +27,12 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openRestore(View view) {
+        Intent intent = new Intent(this, FPActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     public void goNext(View view) {
         if (!email.getText().toString().isEmpty() && !password.getText().toString().isEmpty()) {
             Intent intent = new Intent(LoginActivity.this, MainPage.class);
